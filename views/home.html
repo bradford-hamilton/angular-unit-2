@@ -1,0 +1,16 @@
+<h1>{{ view.message }}</h1>
+<a ui-sref="projects">Projects</a><br>
+<a ui-sref="bio">Bio</a><br>
+<a ui-sref="resume">Resume</a><br>
+<a ui-sref="pictures">Pictures</a>
+
+
+<h3>Zen Quote: {{ view.zenData }}</h3>
+
+<h5>Jack Johnson iTunes first album in data: {{ view.jackJohnsonData }}</h5>
+
+<h1>Message app data:</h1>
+<ul ng-repeat='data in view.getMessageData'>
+  <li>Name: {{ data.name }}</li>
+  <li>Post: {{ data.content }}</li>
+</ul>

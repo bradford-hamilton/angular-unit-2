@@ -1,0 +1,13 @@
+<h1>Check Out Some Cool Pictures!</h1>
+<a ui-sref="home">Home</a><br>
+<a ui-sref="bio">Bio</a><br>
+<a ui-sref="resume">Resume</a>
+<a ui-sref="projects">Projects</a>
+
+
+<a ui-sref="pictures({ pictureId: 1 })">Picture 1</a><br>
+<a ui-sref="pictures({ pictureId: 2 })">Picture 2</a><br>
+<a ui-sref="pictures({ pictureId: 3 })">Picture 3</a>
+
+
+<h3 ng-show='pictureId > 0'>This is picture {{ pictureId }}</h3>
